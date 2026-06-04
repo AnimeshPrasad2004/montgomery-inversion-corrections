@@ -7,7 +7,8 @@
 
 clear; clc;
 
-p = 10037;
+p = 19;
+% Other Prime Numbers to try:- 10007,10009,10037,10169,70199,70039
 n = ceil(log2(p));
 R = mod(2^n, p);
 M = mod(R, p);   % Forward Montgomery inverse
