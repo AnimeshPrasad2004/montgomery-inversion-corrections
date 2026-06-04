@@ -42,3 +42,17 @@ adjustment in all cases.
 **Fix:** Change condition from `(r > 0)` to `(r < p)`.
 
 ---
+
+## How to Run
+
+1. Open MATLAB
+2. Navigate to the repository folder
+3. To verify Algorithm 1 bug and Algorithm 3 fix:
+```matlab
+cd tests
+run('test_algo1_vs_algo3.m')
+```
+4. To verify Algorithm 2 bug and Algorithm 4 fix:
+```matlab
+run('test_algo2_vs_algo4.m')
+```
