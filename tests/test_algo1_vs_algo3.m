@@ -8,7 +8,11 @@
 clear; clc;
 
 p = 19;
-% Other Prime Numbers to try:- 10007,10009,10037,10169,70199,70039
+% Other Prime Numbers to try:- 17, 97, 101, 1009, 10007, 10009, 10037, 10169, 70039, 70199, 100019
+%debugLog prints the values of variables u, v, s, and r at each iteration for a specific input p and a.
+% put debugLog = true (for prime numbers like 19, 97)
+% put debugLog = false (for large prime numbers)
+
 n = ceil(log2(p));
 R = mod(2^n, p);
 M = mod(R, p);   % Forward Montgomery inverse
