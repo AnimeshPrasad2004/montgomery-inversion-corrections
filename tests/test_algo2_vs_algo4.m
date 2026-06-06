@@ -9,9 +9,9 @@ clear; clc;
 
 p = 17;
 % Other Prime Numbers to try:- 17, 97, 101, 1009, 10007, 10009, 10037, 10169, 70039, 70199, 100019
-%debugLog prints the values of variables u, v, s, and r at each iteration for a specific input p and a.
-% put debugLog = true (for prime numbers like 19, 97)
-% put debugLog = false (for large prime numbers)
+% displayLog prints the values of variables u, v, s, and r at each iteration for a specific input p and a.
+% put displayLog = true (for prime numbers like 19, 97)
+% put displayLog = false (for large prime numbers)
 
 n = ceil(log2(p));
 R = mod(2^n, p);
