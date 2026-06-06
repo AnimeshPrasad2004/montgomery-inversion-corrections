@@ -27,7 +27,7 @@ fail_orig  = 0;   % mismatches in original algorithm
 fail_corr  = 0;   % mismatches in corrected algorithm
 
 for a = 1 : p-1
-    expected    = ground_truth_beea(p, a, M);
+    expected    = ground_truth_bEEA(p, a, M);
     result_orig = algo1_original_bEEA(p, a, M, false);
     result_corr = algo3_corrected_bEEA(p, a, M, false);
 
@@ -56,7 +56,7 @@ fprintf('==========================================\n');
 
 % FUNCTIONS
 
-function result = ground_truth_beea(p, a, M)
+function result = ground_truth_bEEA(p, a, M)
     [G, x, ~] = gcd(a, p);
     if G ~= 1
         error('Modular inverse does not exist for a=%d, p=%d', a, p);
