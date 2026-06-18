@@ -11,7 +11,7 @@ function r = algo4_corrected_kaliski(p, a, displayLog)
     pi1 = (v > 0);
 
     if displayLog
-        fprintf('\n    Constant_Kaliskis: p=%d, a=%d    \n', p, a);
+        fprintf('\n    Corrected_Kaliskis: p=%d, a=%d    \n', p, a);
         fprintf('Init: u=%d, v=%d, r=%d, s=%d\n', u, v, r, s);
         fprintf('%-5s %-6s %-6s %-8s %-8s %-15s\n', ...
                 'k', 'u', 'v', 'r', 's', 'Branch');
